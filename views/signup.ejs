@@ -1,0 +1,53 @@
+<!doctype html>
+<!-- What is Ejs: EJS is a simple templating language which is used to generate HTML markup with plain JavaScript.
+ jscript Embedded JavaScript templates -->
+
+ <html>
+<head>
+    <title>21 Savage Fan Site</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="css/custom-bs.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="fonts/line-icons/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/quill.snow.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="bodySignupPage">
+<div class="container">
+<div class="col-sm-6 col-sm-offset-3">
+
+    <h1 id="signUpH1"><span class="mb-4"></span> Signup</h1>
+
+    <% if (message.length > 0) { %>
+        <div class="alert alert-danger"><%= message %></div>
+     <% } %> <!-- parit needs to be here to run for the frontend and backend -->
+
+    <!-- LOGIN FORM -->
+    <form action="/signup" method="post"><!-- the form , using the method of POST this take your information and saves it into the database-->
+        <div class="form-group">
+            <label class="text-black" for="fname">Email</label>
+            <input type="text" class="form-control" name="email">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+
+        <button type="submit" class="btn px-4 btn-primary text-white">Signup</button>
+    </form>
+
+    <hr>
+
+    <p>Already have an account? <a href="/login">Login</a></p> <!-- /login is a GET request that is made via routes.js via line 105 -->
+    <p>Or go <a href="/">home</a>.</p> <!-- / is a GET request that will render the index pages, refer to route.js line 8 -->
+
+</div>
+</div>
+</body>
+</html>

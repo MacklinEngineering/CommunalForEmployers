@@ -1,0 +1,80 @@
+<!-- When the /login page awhich authenticates the user information to what's stored inside the database -->
+
+<!doctype html>
+<html >
+<head>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="css/custom-bs.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="fonts/line-icons/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/quill.snow.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="bodyLoginPage" >
+<div class="container">
+<div class="col-sm-6 col-sm-offset-3">
+
+
+    <h1 id="loginH1"><span class="mb-4"></span> Login</h1>
+
+    <% if (message.length > 0) { %>
+      <!-- the line is to prevent the user from making blank entries, this will work because the length of a blank field is -1  -->
+        <div class="alert alert-danger"><%= message %></div>
+        <!-- This creates an alert message to the user to ask them to login or create a login account  -->
+    <% } %>
+
+    <!-- LOGIN FORM -->
+    <form action="/login" method="post"> <!-- the form , using the method of POST this take your information and saves it into the database, line 102-128 on route.js *DO NOT ALTER route.js section*-->
+        <div class="form-group">
+            <label class="text-black" for="fname">Email</label>
+            <input type="text" class="form-control" name="email">
+        </div>
+        <div class="form-group">
+            <label class="text-black" for="fname">Password</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+
+        <button type="submit" class="btn px-4 btn-primary text-white">Login</button>
+    </form>
+
+    <hr>
+
+    <p>Need an account? <a href="/signup">Signup</a></p>
+    <p>Or go <a href="/">home</a>.</p>
+
+    <!-- <div class="col-lg-6">
+      <h2 class="mb-4">Log In To Communal</h2>
+      <form action="#" class="p-4 border rounded">
+
+        <div class="row form-group">
+          <div class="col-md-12 mb-3 mb-md-0">
+            <label class="text-black" for="fname">Email</label>
+            <input type="text" id="fname" class="form-control" placeholder="Email address">
+          </div>
+        </div>
+        <div class="row form-group mb-4">
+          <div class="col-md-12 mb-3 mb-md-0">
+            <label class="text-black" for="fname">Password</label>
+            <input type="password" id="fname" class="form-control" placeholder="Password">
+          </div>
+        </div>
+
+        <div class="row form-group">
+          <div class="col-md-12">
+            <input type="submit" value="Log In" class="btn px-4 btn-primary text-white">
+          </div>
+        </div>
+
+      </form>
+    </div> -->
+
+
+</body>
+</html>

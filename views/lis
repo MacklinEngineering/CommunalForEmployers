@@ -1,0 +1,138 @@
+<li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
+  <a href="job-single"></a>
+  <div class="job-listing-logo">
+    <img src="images/diapers.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
+  </div>
+
+  <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
+    <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
+      <h2>30 Diapers</h2>
+      <strong>Roxbury</strong>
+    </div>
+    <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
+      <span class="icon-room"></span> Boston, MA
+    </div>
+    <div class="job-listing-meta">
+      <span class="badge badge-danger">Quantity: 1</span>
+    </div>
+  </div>
+
+</li>
+<li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
+  <a href="job-single"></a>
+  <div class="job-listing-logo">
+    <img src="images/csashare.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
+  </div>
+
+  <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
+    <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
+      <h2>Fresh Fruits and Veggies from Local Farm </h2>
+      <strong>Roxbury</strong>
+    </div>
+    <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
+      <span class="icon-room"></span> Boston, MA
+    </div>
+    <div class="job-listing-meta">
+      <span class="badge badge-success">Quantity: 8</span>
+    </div>
+  </div>
+</li>
+
+<li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
+  <a href="job-single"></a>
+  <div class="job-listing-logo">
+    <img src="images/handsani.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
+  </div>
+
+  <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
+    <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
+      <h2>Hand-Santisizer</h2>
+      <strong>Roxbury</strong>
+    </div>
+    <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
+      <span class="icon-room"></span> Boston, MA
+    </div>
+    <div class="job-listing-meta">
+      <span class="badge badge-success">Quantity: 3</span>
+    </div>
+  </div>
+</li>
+
+<li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
+  <a href="job-single"></a>
+  <div class="job-listing-logo">
+    <img src="images/macbook.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
+  </div>
+
+  <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
+    <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
+      <h2>MacBook Laptop: 2015</h2>
+      <strong>Roxbury</strong>
+    </div>
+    <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
+      <span class="icon-room"></span> Boston, MA
+    </div>
+    <div class="job-listing-meta">
+      <span class="badge badge-success">Quantity: 1</span>
+    </div>
+  </div>
+</li>
+
+<li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
+  <a href="job-single"></a>
+  <div class="job-listing-logo">
+    <img src="images/oranges.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
+  </div>
+
+  <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
+    <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
+      <h2>Bag of Oranges</h2>
+      <strong>Roxbury</strong>
+    </div>
+    <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
+      <span class="icon-room"></span> Boston, MA
+    </div>
+    <div class="job-listing-meta">
+      <span class="badge badge-success">Quantity: 2</span>
+    </div>
+  </div>
+</li>
+<li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
+  <a href="job-single"></a>
+  <div class="job-listing-logo">
+    <img src="images/vegancake.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
+  </div>
+
+  <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
+    <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
+      <h2>Vegan Chocolate Cake</h2>
+      <strong>Roxbury</strong>
+    </div>
+    <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
+      <span class="icon-room"></span> Boston, MA
+    </div>
+    <div class="job-listing-meta">
+      <span class="badge badge-danger">Quantity: 1</span>
+    </div>
+  </div>
+
+</li>
+<li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
+  <a href="job-single"></a>
+  <div class="job-listing-logo">
+    <img src="images/bedroomset.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
+  </div>
+
+  <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
+    <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
+      <h2>Bedroom Set</h2>
+      <strong>Roxbury</strong>
+    </div>
+    <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
+      <span class="icon-room"></span> Boston, MA
+    </div>
+    <div class="job-listing-meta">
+      <span class="badge badge-success">Quanitity: 4</span>
+    </div>
+  </div>
+</li>
