@@ -412,9 +412,9 @@
   background-image: url("https://images.pexels.com/photos/325521/pexels-photo-325521.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   /* background-size: 900px 500px; */
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
-  margin-top: 150px;
+  /* margin-top: 150px; */
   font-family: 'Advent Pro', sans-serif;
 }
 
@@ -438,7 +438,7 @@
   font-weight: bold;
 }
 #indexH1{
-  padding-top: 170px;
+  padding-top: 320px;
   margin-bottom: 0px;
 }
 .btn-default{
@@ -905,7 +905,7 @@ h1, h2, h3, h4 {
   min-height: 900px; }
 
 #home-sectionDashboard{
-  height: 25vh;
+  height: 30vh;
   min-height: 20px;
 }
 
@@ -921,6 +921,7 @@ h1, h2, h3, h4 {
 
 #dashboardH1{
   font-size: 1.5rem;
+  margin-top: 2rem;
 }
 .section-hero.overlay, .section-hero.overlay-2 {
   position: relative; }
