@@ -327,7 +327,9 @@
         width: auto; }
         .site-mobile-menu .site-nav-wrap[data-class="social"] > li:first-child a {
           padding-left: 15px !important; }
-
+#logoutMain{
+  margin-left: 100px;
+}
 .sticky-wrapper {
   position: absolute;
   z-index: 100;

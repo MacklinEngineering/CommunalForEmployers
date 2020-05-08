@@ -12,7 +12,9 @@ module.exports = function (app, passport, db) {
       filename: (req, file, cb) => {
         cb(null, file.fieldname + '-' + Date.now() + ".png")  // cb filepath and timestamp with date and filetype
       }
+
   });
+  // alert("Image successfully uploaded")
   var upload = multer({storage: storage}); //upload img to destination 'storage'
 
 

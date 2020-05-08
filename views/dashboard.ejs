@@ -150,13 +150,14 @@
           <div class="row mb-5 justify-content-center">
             <div class="col-md-7 text-center">
               <!-- <h2 class="section-title mb-2">My Dashboard</h2> -->
-              Item Number (start at 1 and increment that number by 1 everytime you donate an item):
-   <input id="xValue" type="number" step="any" placeholder="Enter Item Number"> $ Value of item:
+              <!-- Item Number (start at 1 and increment that number by 1 everytime you donate an item):
+   <input id="xValue" type="number" step="any" placeholder="Enter Item Number">  -->
+   $ Value of item:
    <input id="yValue" type="number" step="any" placeholder="Enter $Value">
    <button id="renderButton">Add Data</button>
    <div id="chartContainer" style="height: 270px; width: 100%;">
    </div>
-
+You have saved: 
             </div>
           </div>
 
@@ -164,7 +165,9 @@
 <!-- Code edited from https://canvasjs.com/docs/charts/how-to/render-chart-by-accepting-datapoints-from-user-input/ -->
           <script type="text/javascript">
                   window.onload = function() {
-                      var dps = []; //dataPoints.
+                      var dataPoints = []; //dataPoints.
+                      var yvalues = [];
+
 
                       var chart = new CanvasJS.Chart("chartContainer", {
                           title: {
@@ -172,22 +175,28 @@
                           },
                           data: [{
                               type: "line",
-                              dataPoints: dps
+                              dataPoints
                           }]
                       });
 
                       function addDataPointsAndRender() {
-                          xValue = Number(document.getElementById("xValue").value);
-                          yValue = Number(document.getElementById("yValue").value);
-                          dps.push({
-                              x: xValue,
-                              y: yValue
-                          });
+
+                          yvalues.push(
+                            Number(document.getElementById("yValue").value)
+                          )
+
+                          dataPoints.push({
+                              x: yvalues.length - 1,
+                              y: yvalues.reduce((a,b) => a+b, 0)
+                          })
+
                           chart.render();
                       }
 
+
                       var renderButton = document.getElementById("renderButton");
                       renderButton.addEventListener("click", addDataPointsAndRender);
+
                   }
               </script>
               <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
