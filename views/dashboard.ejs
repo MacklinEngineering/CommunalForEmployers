@@ -1,397 +1,189 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>JobBoard &mdash; Website Template by Colorlib</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+<head>
+  <title>COMMUNAL</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/custom-bs.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/line-icons/style.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/quill.snow.css">
 
-    <link rel="stylesheet" href="css/custom-bs.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-    <link rel="stylesheet" href="fonts/line-icons/style.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/quill.snow.css">
-
-
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body id="top">
-
-    <div id="overlayer"></div>
-    <div class="loader">
-      <div class="spinner-border text-primary" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-    </div>
-
-
-    <div class="site-wrap">
-
-      <div class="site-mobile-menu site-navbar-target">
-        <div class="site-mobile-menu-header">
-          <div class="site-mobile-menu-close mt-3">
-            <span class="icon-close2 js-menu-toggle"></span>
-          </div>
-        </div>
-        <div class="site-mobile-menu-body"></div>
-      </div>
-      <!-- .site-mobile-menu -->
-
-
-
-          <!-- NAVBAR -->
-          <header class="site-navbar mt-3">
-            <div class="container-fluid">
-              <div class="row align-items-center">
-                <div class="site-logo col-6"><a href="/about">COMMUNAL</a></div>
-
-                <nav class="mx-auto site-navigation">
-                  <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
-                    <li><a href="/profile" class="nav-link active">Home</a></li>
-                    <li class="has-children">
-                      <a href="/about" class="active">About Us</a>
-                      <ul class="dropdown">
-                        <li><a href="/services">Services</a></li>
-                        <li><a href="/testimonials">Testimonials</a></li>
-                        <!-- <li><a href="/faq">Frequently Ask Questions</a></li> -->
-                      </ul>
-                    </li>
-
-                    <!-- <li class="has-children">
-                    <li><a href="/about">About Us</a></li>
-                    </li> -->
-                    <li class="has-children">
-                      <a href="/job-listings" class="active">View All Items</a>
-                      <ul class="dropdown">
-                        <!-- <li><a href="/item-single">Item Single</a></li> -->
-                        <li><a href="/post-job" class="active">Post An Item</a></li>
-                      </ul>
-                    </li>
-
-                    <li><a href="/contact" class="active">Contact</a></li>
-                    <!-- <li><a href="/index" class="active">Log Out</a></li> -->
-                    <!-- <li class="d-lg-none"><a href="/post-job"><span class="mr-2">+</span> Post An Item</a></li>
-                    <li class="d-lg-none"><a href="/login">Log In</a></li> -->
-                  </ul>
-                </nav>
-
-                <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
-                  <div class="ml-auto">
-                    <!-- <a href="post-job.html" class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-add"></span>Post a Item</a> -->
-                    <a href="/logout" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log Out</a>
-                  </div>
-                  <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
-                </div>
-
-              </div>
-            </div>
-          </header>
-
-
-
-          <section class="section-hero overlay inner-page bg-image" style="background-image: url('https://images.pexels.com/photos/325521/pexels-photo-325521.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');" id="home-sectionDashboard">
-            <div class="container">
-              <div class="row" id="rowDashboard">
-                <div class="col-md-7">
-                  <h1 class="text-white font-weight-bold" id="dashboardH1">My Donation Tracker</h1>
-                </div>
-              </div>
-            </div>
-          </section>
-
-      <!-- <section class="home-section section-hero overlay bg-image" style="background-image: url('https://images.pexels.com/photos/325521/pexels-photo-325521.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');" id="home-sectionDashboard"> -->
-
-        <!-- <div class="container">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-md-12">
-              <div class="mb-5">
-                <h1 class="text-white font-weight-bold" id="listingsH1">Browse All Free Things Below</h1>
-                <p>Search through hundres of pages of free food, free furniture, anything you'll ever need to survive in a big city.</p>
-              </div>
-              <form method="post" class="search-jobs-form">
-                <div class="row mb-5">
-                  <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                    <input type="text" class="form-control form-control-lg" placeholder="Item Name" id="listingsItemName">
-                  </div>
-
-                  <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                    <button type="submit" class="btn btn-primary btn-lg btn-block text-white btn-search"><span class="icon-search icon mr-2"></span>Search Items</button>
-                    <a class="btn btn-primary btn-lg btn-block text-white btn-search" id="searchItemButton"><span class="icon-search icon mr-2"></span>Search Items</a>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12 popular-keywords">
-                    <h3 id="keywords">Trending Keywords:</h3>
-                    <ul class="keywords list-unstyled m-0 p-0">
-                      <li><a href="#" class="">Masks</a></li>
-                      <li><a href="#" class="">Medical Supplies</a></li>
-                      <li><a href="#" class="">Diapers</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-
-        <a href="#next" class="scroll-button smoothscroll" id="listingsDownArrow">
-          <span class=" icon-keyboard_arrow_down"></span>
-        </a> -->
-
-      <!-- </section> -->
-
-      <section class="site-section" id="next">
-        <div class="container">
-
-          <div class="row mb-5 justify-content-center">
-            <div class="col-md-7 text-center">
-              <!-- <h2 class="section-title mb-2">My Dashboard</h2> -->
-              <!-- Item Number (start at 1 and increment that number by 1 everytime you donate an item):
-   <input id="xValue" type="number" step="any" placeholder="Enter Item Number">  -->
-   $ Value of item:
-   <input id="yValue" type="number" step="any" placeholder="Enter $Value">
-   <button id="renderButton">Add Data</button>
-   <div id="chartContainer" style="height: 270px; width: 100%;">
-   </div>
-You have saved: 
-            </div>
-          </div>
-
-<!-- #BRUH I had to scratch my entire dashboard idea because the documentation was not adequate. Worked for a week on that dashboard and got it close to how I wanted it to look but it was missing the datapoints which was the point. Decided to create the dashboard from scratch. And turn it into a donation tracker. Still in progress. -->
-<!-- Code edited from https://canvasjs.com/docs/charts/how-to/render-chart-by-accepting-datapoints-from-user-input/ -->
-          <script type="text/javascript">
-                  window.onload = function() {
-                      var dataPoints = []; //dataPoints.
-                      var yvalues = [];
-
-
-                      var chart = new CanvasJS.Chart("chartContainer", {
-                          title: {
-                              text: "$ Amount Donated To Your Community Through Communal"
-                          },
-                          data: [{
-                              type: "line",
-                              dataPoints
-                          }]
-                      });
-
-                      function addDataPointsAndRender() {
-
-                          yvalues.push(
-                            Number(document.getElementById("yValue").value)
-                          )
-
-                          dataPoints.push({
-                              x: yvalues.length - 1,
-                              y: yvalues.reduce((a,b) => a+b, 0)
-                          })
-
-                          chart.render();
-                      }
-
-
-                      var renderButton = document.getElementById("renderButton");
-                      renderButton.addEventListener("click", addDataPointsAndRender);
-
-                  }
-              </script>
-              <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-<!-- Code Edited from https://canvasjs.com/docs/charts/basics-of-creating-html5-chart/updating-chart-options/ -->
-<!-- <div id="chartContainer" style="width:100%; height:280px"></div>
-  <input type="text" class="form-control" id="job-value" placeholder="eg. 15" name="ItemValue">
-<button id="addDataPoint">Add Latest Donated Item Worth</button>
-
-<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-<script type="text/javascript">
-
-var output = []
-window.onload = function () {
-	var chart = new CanvasJS.Chart("chartContainer", {
-		title: {
-			text: "Amount $ Saved By Using Communal"
-		},
-		data: [
-		{
-			type: "spline",
-			dataPoints: [
-				{ y: 10 },
-				{ y:  4 },
-				{ y: 18 },
-				{ y:  8 }
-			]
-		}
-		]
-	});
-	chart.render();
-
-  // let newvalue = document.getElementById("job-value").value
-  // console.log(newvalue + "from dashboard.ejs") //empty
-
-	$("#addDataPoint").click(function () {
-
-	var length = chart.options.data[0].dataPoints.length;
-	chart.options.title.text = "Amount Donated To Your Community";
-	// chart.options.data[0].dataPoints.push({ y: parseInt(newvalue)});
-  // console.log({y: parseInt(newvalue)})
-
-
-
-  // chart.options.data[0].dataPoints.push({ y: parseInt(<%= Listings.itemvalue %>)});
-  output.push({ y: parseInt(<%= Listings.itemvalue %>)});
-
-  console.log({y: parseInt(<%= Listings.itemvalue %>)})
-
-
-
-	chart.render();
-
-	});
-
-
-	$("#updateDataPoint").click(function () {
-
-	var length = chart.options.data[0].dataPoints.length;
-	chart.options.title.text = "Last DataPoint Updated";
-	chart.options.data[0].dataPoints[length-1].y = 15 - Math.random() * 10;
-
-	chart.render();
-
-	});
-}
-</script> -->
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
-<!-- <button id="updateDataPoint">Update Data Point</button> -->
-
-
-
-          <!-- <div class="row pagination-wrap">
-            <div class="col-md-6 text-center text-md-left mb-4 mb-md-0">
-              <span>Showing 1-3 Of 4,568 Items</span>
-            </div>
-            <div class="col-md-6 text-center text-md-right">
-              <div class="custom-pagination ml-auto">
-                <a href="#" class="prev">Prev</a>
-                <div class="d-inline-block">
-                <a href="#" class="active">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                </div>
-                <a href="#" class="next">Next</a>
-              </div>
-            </div>
-          </div> -->
-
+<body id="top">
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <div class="site-wrap">
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
         </div>
-      </section>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    <!-- .site-mobile-menu -->
 
-    <!-- <section class="py-5 bg-image overlay-primary fixed overlay" style="background-image: url('images/hero_1.jpg');">
-      <div class="container">
+    <!-- NAVBAR -->
+    <header class="site-navbar mt-3">
+      <div class="container-fluid">
         <div class="row align-items-center">
-          <div class="col-md-8">
-            <h2 class="text-white">In Search Of (ISO) something?</h2>
-            <p class="mb-0 text-white lead">Sign Up So You Can Get Free Stuff!</p>
-          </div>
-          <div class="col-md-3 ml-auto">
-            <a href="#" class="btn btn-warning btn-block btn-lg">Sign Up</a>
+          <div class="site-logo col-6"><a href="/about">COMMUNAL</a></div>
+          <nav class="mx-auto site-navigation">
+            <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+              <li><a href="/profile" class="nav-link active">Home</a></li>
+              <li class="has-children">
+                <a href="/about" class="active">About Us</a>
+                <ul class="dropdown">
+                  <li><a href="/services">Services</a></li>
+                  <li><a href="/testimonials">Testimonials</a></li>
+                </ul>
+              </li>
+              <li class="has-children">
+                <a href="/job-listings" class="active">View All Items</a>
+                <ul class="dropdown">
+                  <li><a href="/post-job" class="active">Post An Item</a></li>
+                </ul>
+              </li>
+              <li><a href="/contact" class="active">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
+            <div class="ml-auto">
+              <a href="/logout" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log Out</a>
+            </div>
+            <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
           </div>
         </div>
       </div>
-    </section> -->
+    </header>
 
+    <!-- DONATION TRACKER GRAPH -->
+    <section class="section-hero overlay inner-page bg-image" style="background-image: url('https://images.pexels.com/photos/325521/pexels-photo-325521.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');" id="home-sectionDashboard">
+      <div class="container">
+        <div class="row" id="rowDashboard">
+          <div class="col-md-7">
+            <h1 class="text-white font-weight-bold" id="dashboardH1">My Donation Tracker</h1>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="site-section" id="next">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-7 text-center">
+            $ Value of item:
+            <input id="yValue" type="number" step="any" placeholder="Enter $Value">
+            <button id="renderButton">Add Data</button>
+            <div id="chartContainer" style="height: 270px; width: 100%;">
+            </div>
+            <!-- You have saved:  -->
+          </div>
+        </div>
 
+        <!-- Code edited from https://canvasjs.com/docs/charts/how-to/render-chart-by-accepting-datapoints-from-user-input/ -->
+        <script type="text/javascript">
+          window.onload = function() {
+            var dataPoints = [];
+            var yvalues = [];
+            var chart = new CanvasJS.Chart("chartContainer", {
+              title: {
+                text: "$ Amount Donated To Your Community Through Communal"
+              },
+              data: [{
+                type: "line",
+                dataPoints
+              }]
+            });
 
+            function addDataPointsAndRender() {
+              yvalues.push(
+                Number(document.getElementById("yValue").value)
+              )
+              dataPoints.push({
+                x: yvalues.length - 1,
+                y: yvalues.reduce((a, b) => a + b, 0)
+              })
+              chart.render();
+            }
+            var renderButton = document.getElementById("renderButton");
+            renderButton.addEventListener("click", addDataPointsAndRender);
+          }
+        </script>
+        <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        </head>
 
+        <body>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer class="site-footer">
-
       <a href="#top" class="smoothscroll scroll-top">
         <span class="icon-keyboard_arrow_up"></span>
       </a>
-
       <div class="container">
         <div class="row mb-5">
-          <!-- <div class="col-6 col-md-3 mb-4 mb-md-0">
-            <h3>Search Trending</h3>
-            <ul class="list-unstyled">
-              <li><a href="/job-single">Hand Sanitizer</a></li>
-              <li><a href="/job-single">Masks</a></li>
-              <li><a href="/job-single">Canned Goods</a></li>
-              <li><a href="/job-single">Bread</a></li>
-              <li><a href="/job-single">Printers</a></li>
-              <li><a href="/job-single">Clorox Wipes</a></li>
-            </ul>
-          </div> -->
           <div class="col-6 col-md-3 mb-4 mb-md-0">
             <h3>Company</h3>
             <ul class="list-unstyled">
               <li><a href="/about">About Us</a></li>
-              <!-- <li><a href="#">How We Got Started</a></li>
-              <li><a href="#">Our Future</a></li>
-              <li><a href="#">Annual Impact Report</a></li> -->
             </ul>
           </div>
           <div class="col-6 col-md-3 mb-4 mb-md-0">
             <h3>Support</h3>
             <ul class="list-unstyled">
-              <li><a href="/contact">Tech Support</a></li>
-              <!-- <li><a href="#">Privacy</a></li> -->
-              <!-- <li><a href="#">Terms of Service</a></li> -->
+              <li><a href="/contact">Tech Support</a></li>=
             </ul>
           </div>
           <div class="col-6 col-md-3 mb-4 mb-md-0">
             <h3>Contact Us</h3>
             <div class="footer-social">
-              <!-- <a href="#"><span class="icon-facebook"></span></a> -->
               <a href="https://twitter.com/NyahMacklinDev"><span class="icon-twitter"></span></a>
-              <!-- <a href="#"><span class="icon-instagram"></span></a> -->
               <a href="https://www.linkedin.com/in/nyahmacklin/"><span class="icon-linkedin"></span></a>
             </div>
           </div>
         </div>
-
         <div class="row text-center">
           <div class="col-12">
             <p class="copyright"><small>
-
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | COMMUNAL is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >MacklinEngineering</a>
-          </small></p>
+                Copyright &copy;<script>
+                  document.write(new Date().getFullYear());
+                </script> All rights reserved | COMMUNAL is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by MacklinEngineering
+              </small></p>
           </div>
         </div>
       </div>
     </footer>
-
-
-
   </div>
 
-    <!-- SCRIPTS -->
-    <script src="js/main.js"> </script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/stickyfill.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
+  <!-- SCRIPTS -->
+  <script src="js/main.js"> </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/stickyfill.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/quill.min.js"></script>
+  <script src="js/bootstrap-select.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
 
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/quill.min.js"></script>
-
-
-    <script src="js/bootstrap-select.min.js"></script>
-
-    <script src="js/custom.js"></script>
-
-
-
-  </body>
 </html>

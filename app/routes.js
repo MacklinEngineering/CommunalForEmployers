@@ -41,73 +41,32 @@ module.exports = function (app, passport, db) {
   })
 
   app.get('/dashboard', function (req, res) {
+      res.render('dashboard.ejs');
+  })
 
-    var value = req.body.itemValue
-    console.log(value + " from routes") //undefined from routes
-    db.collection('Listings').find({
-      itemValue: `{$value}`
-    }).toArray((err, result) => {  //Find all posts then turn to array
-    //   if (err) return console.log(err)
-    // console.log(result)
-      res.render('dashboard.ejs',{
-        Listings: result
-      })
-    })
-  });
+  // var value = req.body.itemValue
+  // db.collection('Listings').find({
+  //   itemValue: `{$value}`
+  // }).toArray((err, result) => {  //Find all posts then turn to array
+  //   if (err) return console.log(err)
+  // console.log(result)
 
-  // // This code is altered from Socket.io's chat box tutorial
-  // app.get('/chat', function (req, res) {
-  //   const id = req.query.id
-  //   console.log("chat job id:", id)
-  //
-  //   db.collection('Listings').findOne({
-  //     _id: ObjectId(id)
-  //   },(err, result) => {  //Find all posts then turn to array
-  //   //   if (err) return console.log(err)
-  //   console.log("Chat Find One Listing",result)
-  //     // res.render('job-listings.ejs',{
-  //     //   Listing: result
-  //     // })
-  //     res.render('chat.ejs', {
-  //       Listing: result,
-  //       email: req.user.local.email
-  //     });
-  //   })
-  // });
 
 
   app.get('/job-listings', function (req, res) {
     db.collection('Listings').find().toArray((err, result) => {  //Find all posts then turn to array
     //   if (err) return console.log(err)
-    console.log(result)
+    // console.log(result)
       res.render('job-listings.ejs',{
         Listings: result
       })
     })
   })
 
-  // app.get('/searchItems', function (req, res) {
-  //   db.collection('Listings').find().toArray((err, result) => {  //Find all posts then turn to array
-  //   //   if (err) return console.log(err)
-  //   console.log(result)
-  //     res.render('job-listings.ejs',{
-  //       Listings: result
-  //     })
-  //   })
-  // })
-
-
-// app.get("job-listings", function (req, res, next){
-//   db.collection('Listings').find().toArray((err, result) => {
-// })
-
-//This code is altered from Lokendra-rawat on Github- Thank You!
-//https://github.com/Lokendra-rawat/NodeJs-shopping-cart/blob/master/routes/xhr.js
   app.get('/searchItems', function (req, res) {
-    // var q = req.body.q
-    // var q = "Masks"
-	  var q = req.query.q;
-    console.log(req.query)
+
+    var q = req.query.q; //Eg: q = "Masks"
+    // console.log(req.query)
       db.collection('Listings').find({
         itemTitle: q
       }).toArray((err, result) => {
@@ -143,33 +102,6 @@ module.exports = function (app, passport, db) {
 	// }).limit(20);
 
 });
-// res.render('/');
-
-
-  //   res.render('job-listings.ejs', {items: [{
-  //     title: "Masks",
-  //     city: "Boston",
-  //     quantity: "300",
-  //   },{
-  //     title: "Hand Santizer",
-  //     city: "Roxbury",
-  //     quantity: "100",
-  //   }]
-  // })
-
-
-    // })
-  // })
-  // // FEED PAGE =========================
-  // app.get('/feed', function(req, res) {
-  //     db.collection('posts').find().toArray((err, result) => {  //Find all posts then turn to array
-  //       if (err) return console.log(err)
-  //       res.render('feed.ejs', {   //render /feed
-  //         user : req.user,
-  //         posts: result
-  //       })
-  //     })
-  // });
 
 
   app.get('/job-single', function (req, res) {
@@ -180,7 +112,6 @@ module.exports = function (app, passport, db) {
       _id: ObjectId(id)
     },
     (err, result) => {  //Find all posts then turn to array
-    console.log("Find One New Listing",result)
 
     res.render('job-single.ejs', {
         Listing: result
@@ -195,23 +126,6 @@ module.exports = function (app, passport, db) {
   app.get('/testimonials', function (req, res) {
     res.render('testimonials.ejs');
   })
-  //     app.get('/', function (req, res){
-  //         res.render('about.ejs')
-  //     })
-  //     app.get('/', function (req, res){
-  //       res.render('blog-single.ejs')
-  //   })
-  //   app.get('/', function (req, res){
-  //     res.render('contact.ejs')
-  // })
-  // app.get('/', function (req, res){
-  //   res.render('faq.ejs')
-  // })
-  // app.get('/', function (req, res){
-  //   res.render('job-listings.ejs')
-  // })
-
-// app.get("profile")
 
 
   // PROFILE SECTION =========================
@@ -233,6 +147,7 @@ module.exports = function (app, passport, db) {
 
   // message board routes ===============================================================
 
+  //look to line 135 in post-job EJS for client code post item listings endpoint: method=post, action=/listings
   app.post('/listings', isLoggedIn, upload.single("file-to-upload"), (req, res) => {
     console.log(req.file.filename)
     let uid = ObjectId(req.session.passport.user)
@@ -245,60 +160,6 @@ module.exports = function (app, passport, db) {
     })
 
   })
-
-
-
-  // app.post("/")
-
-  // db.collection('messages').save({ name: req.body.name, msg: req.body.msg, thumbUp: 0, thumbDown: 0 }, (err, result) => {
-    //   if (err) return console.log(err)
-    //   console.log('saved to database')
-    //   res.redirect('/profile')
-    // })
-  // app.post('/messages', (req, res) => {
-  //   db.collection('messages').save({name: req.body.name, msg: req.body.msg, thumbUp: 0, thumbDown:0}, (err, result) => {
-  //     if (err) return console.log(err)
-  //     console.log('saved to database')
-  //     res.redirect('/profile')
-  //   })
-  // })
-
-  // app.put('/messages', (req, res) => {
-  //   db.collection('messages')
-  //   .findOneAndUpdate({name: req.body.name, msg: req.body.msg}, {
-  //     $set: {
-  //       thumbUp:req.body.thumbUp + 1
-  //     }
-  //   }, {
-  //     sort: {_id: -1},
-  //     upsert: true
-  //   }, (err, result) => {
-  //     if (err) return res.send(err)
-  //     res.send(result)
-  //   })
-  // })
-
-  // app.put('/thumbDown', (req, res) => {
-  //   db.collection('messages')
-  //   .findOneAndUpdate({name: req.body.name, msg: req.body.msg}, {
-  //     $set: {
-  //       thumbUp:req.body.thumbUp - 1
-  //     }
-  //   }, {
-  //     sort: {_id: -1},
-  //     upsert: true
-  //   }, (err, result) => {
-  //     if (err) return res.send(err)
-  //     res.send(result)
-  //   })
-  // })
-
-  // app.delete('/messages', (req, res) => {
-  //   db.collection('messages').findOneAndDelete({name: req.body.name, msg: req.body.msg}, (err, result) => {
-  //     if (err) return res.send(500, err)
-  //     res.send('Message deleted!')
-  //   })
-  // })
 
   // =============================================================================
   // AUTHENTICATE (FIRST LOGIN) ==================================================
